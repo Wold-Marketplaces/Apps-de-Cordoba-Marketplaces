@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ciudades de Córdoba Marketplaces</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #3a1c71 0%, #d76d77 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    header {
+      margin: 2rem 0 1rem 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin-bottom: 1.5rem;
+    }
+    .market-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 1200px;
+      gap: 2rem;
+      margin: 1rem;
+      padding: 1rem;
+    }
+    .market-card {
+      background: #fff;
+      color: #222;
+      border-radius: 18px;
+      width: 320px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .market-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(42,157,143,0.25);
+    }
+    .card-logo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #f59e0b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: #fff;
+      margin: 1.5rem auto 0.5rem auto;
+      box-shadow: 0 2px 12px rgba(245,158,11,0.18);
+    }
+    .market-card.cordoba .card-logo {
+      background: linear-gradient(135deg, #6366f1 0%, #38bdf8 100%);
+    }
+    .market-card.carlospaz .card-logo {
+      background: linear-gradient(135deg, #fbbf24 0%, #f87171 100%);
+    }
+    .market-card.riocuarto .card-logo {
+      background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+    }
+    .market-card.villamaria .card-logo {
+      background: linear-gradient(135deg, #f43f5e 0%, #f59e42 100%);
+    }
+    .market-card.sanfrancisco .card-logo {
+      background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+    }
+    .market-card.altagracia .card-logo {
+      background: linear-gradient(135deg, #f472b6 0%, #a78bfa 100%);
+    }
+    .market-card.jesusmaria .card-logo {
+      background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+    }
+    .market-card.lacalera .card-logo {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+    }
+    .market-card.cosquin .card-logo {
+      background: linear-gradient(135deg, #f87171 0%, #fbbf24 100%);
+    }
+    .market-card.villaallende .card-logo {
+      background: linear-gradient(135deg, #10b981 0%, #6366f1 100%);
+    }
+    .market-card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.2rem;
+      text-align: center;
+    }
+    .market-card p {
+      font-size: 1rem;
+      margin: 0.5rem 1rem 1rem 1rem;
+      text-align: center;
+      line-height: 1.4;
+    }
+    .card-link {
+      font-weight: bold;
+      color: #2a9d8f;
+      text-decoration: none;
+      margin-bottom: 1.2rem;
+      transition: color 0.2s;
+      display: inline-block;
+    }
+    .card-link:hover {
+      color: #f59e0b;
+      text-decoration: underline;
+    }
+    @media (max-width: 800px) {
+      .market-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+      .market-card {
+        width: 90vw;
+        max-width: 350px;
+      }
+    }
+    footer {
+      margin: 2rem 0 1rem 0;
+      font-size: 1rem;
+      opacity: 0.8;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-city"></i> Ciudades de Córdoba Marketplaces</h1>
+    <p>Explora y apoya los comercios locales de cada ciudad de Córdoba.<br>¡Elige tu ciudad y accede al marketplace local!</p>
+  </header>
+  <div class="market-container">
+    <!-- Córdoba Capital -->
+    <a href="https://wold-marketplaces.github.io/Ciudades-de-Cordoba/index.html?ciudad=C%C3%B3rdoba%20Capital" class="market-card cordoba" target="_blank" rel="noopener noreferrer">
+      <div class="card-logo"><i class="fas fa-city"></i></div>
+      <h2>Córdoba Capital</h2>
+      <p>El marketplace de la capital cordobesa. Comercio, servicios y más.</p>
+      <span class="card-link">Ir a Córdoba Capital &rarr;</span>
+    </a>
+    <!-- Villa Carlos Paz -->
+    <a href="https://wold-marketplaces.github.io/Ciudades-de-Cordoba/index.html?ciudad=Villa%20Carlos%20Paz" class="market-card carlospaz" target="_blank" rel="noopener noreferrer">
+      <div class="card-logo"><i class="fas fa-water"></i></div>
+      <h2>Villa Carlos Paz</h2>
+      <p>Comercio y turismo en la villa más famosa de Córdoba.</p>
+      <span class="card-link">Ir a Villa Carlos Paz &rarr;</span>
+    </a>
+    <!-- Río Cuarto -->
+    <a href="https://wold-marketplaces.github.io/Ciudades-de-Cordoba/index.html?ciudad=R%C3%ADo%20Cuarto" class="market-card riocuarto" target="_blank" rel="noopener noreferrer">
+      <div class="card-logo"><i class="fas fa-leaf"></i></div>
+      <h2>Río Cuarto</h2>
+      <p>El marketplace de la ciudad del sur cordobés.</p>
+      <span class="card-link">Ir a Río Cuarto &rarr;</span>
+    </a>
+    <!-- Villa María -->
+    <a href="https://wold-marketplaces.github.io/Ciudades-de-Cordoba/index.html?ciudad=Villa%20Mar%C3%ADa" class="market-card villamaria" target="_blank" rel="noopener noreferrer">
+      <div class="card-logo"><i class="fas fa-graduation-cap"></i></div>
+      <h2>Villa María</h2>
+      <p>Comercio, cultura y educación en Villa María.</p>
+      <span class="card-link">Ir a Villa María &rarr;</span>
+    </a>
+    <!-- San Francisco -->
+    <a href="https://wold-marketplaces.github.io/Ciudades-de-Cordoba/index.html?ciudad=San%20Francisco" class="market-card sanfrancisco" target="_blank" rel="noopener noreferrer">
+      <div class="card-logo"><i class="fas fa-industry"></i></div>
+      <h2>San Francisco</h2>
+      <p>Industria y servicios en el este provincial.</p>
+      <span class="card-link">Ir a San Francisco &rarr;</span>
+    </a>
+    <!-- Alta Gracia -->
+    <a href="https://wold-marketplaces.github.io/Ciudades-de-Cordoba/index.html?ciudad=Alta%20Gracia" class="market-card altagracia" target="_blank" rel="noopener noreferrer">
+      <div class="card-logo"><i class="fas fa-church"></i></div>
+      <h2>Alta Gracia</h2>
+      <p>Historia, cultura y comercios en Alta Gracia.</p>
+      <span class="card-link">Ir a Alta Gracia &rarr;</span>
+    </a>
+    <!-- Jesús María -->
+    <a href="https://wold-marketplaces.github.io/Ciudades-de-Cordoba/index.html?ciudad=Jes%C3%BAs%20Mar%C3%ADa" class="market-card jesusmaria" target="_blank" rel="noopener noreferrer">
+      <div class="card-logo"><i class="fas fa-cow"></i></div>
+      <h2>Jesús María</h2>
+      <p>Tradición y campo en el norte de Córdoba.</p>
+      <span class="card-link">Ir a Jesús María &rarr;</span>
+    </a>
+    <!-- La Calera -->
+    <a href="https://wold-marketplaces.github.io/Ciudades-de-Cordoba/index.html?ciudad=La%20Calera" class="market-card lacalera" target="_blank" rel="noopener noreferrer">
+      <div class="card-logo"><i class="fas fa-mountain"></i></div>
+      <h2>La Calera</h2>
+      <p>Comercio y naturaleza en La Calera.</p>
+      <span class="card-link">Ir a La Calera &rarr;</span>
+    </a>
+    <!-- Cosquín -->
+    <a href="https://wold-marketplaces.github.io/Ciudades-de-Cordoba/index.html?ciudad=Cosqu%C3%ADn" class="market-card cosquin" target="_blank" rel="noopener noreferrer">
+      <div class="card-logo"><i class="fas fa-guitar"></i></div>
+      <h2>Cosquín</h2>
+      <p>Capital nacional del folklore y comercios locales.</p>
+      <span class="card-link">Ir a Cosquín &rarr;</span>
+    </a>
+    <!-- Villa Allende -->
+    <a href="https://wold-marketplaces.github.io/Ciudades-de-Cordoba/index.html?ciudad=Villa%20Allende" class="market-card villaallende" target="_blank" rel="noopener noreferrer">
+      <div class="card-logo"><i class="fas fa-golf-ball-tee"></i></div>
+      <h2>Villa Allende</h2>
+      <p>Comercio, golf y vida tranquila en Villa Allende.</p>
+      <span class="card-link">Ir a Villa Allende &rarr;</span>
+    </a>
+  </div>
+  <footer>
+    &copy; 2025 Ciudades de Córdoba Marketplaces. Fomentando el comercio local en toda la provincia.
+  </footer>
+</body>
+</html>
